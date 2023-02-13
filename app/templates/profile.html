@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block main %}
+<div class="body-container">
+    <div class="profile-container">
+        <div class="p-header">
+            <div class="p-main-info">
+                <img src="{{ url_for('static', filename='jet.jpeg') }}" alt="Profile Picture" class="profile-picture" />
+                <h2 class="full-name">Chavaughn Wilkins</h2>
+            </div>
+            <div class="p-sec-info">
+                <p class="username">@cwilkins</p>
+                <p class="location">Kingston, Jamaica</p>
+                <p class="join-date">Joined: {{datejoined}}</p>
+            </div>
+        </div>
+        <div class="p-footer">
+            <div class="bio-div">
+                <p class="bio">Aspiring Software Developer working at some company you never heard of</p>
+            </div>
+            <div class="stats">
+                <div class="posts">
+                    <p class="value">1</p>
+                    <p class="name">Posts</p>
+                </div>
+                <div class="followers">
+                    <p class="value">25.1M</p>
+                    <p class="name">Followers</p>
+                </div>
+                <div class="following">
+                    <p class="value">850</p>
+                    <p class="name">following</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn follow-button">Follow</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
